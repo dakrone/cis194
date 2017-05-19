@@ -1,0 +1,5 @@
+#+TITLE: CIS 194
+#+AUTHOR: Lee Hinman
+#+EMAIL: lee@writequit.org
+
+Not much to see here, as I work through the homework assignments.
