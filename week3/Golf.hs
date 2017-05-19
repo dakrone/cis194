@@ -26,3 +26,15 @@ skips l =
 ------------------------------
 
 -- Exercise 2
+
+localMaxima :: [Integer] -> [Integer]
+localMaxima [] = []
+localMaxima [_] = []
+localMaxima [_, _] = []
+localMaxima (x:y:z:zs)
+  | x < y && y > z = y : (localMaxima $ y:z:zs)
+  | otherwise = localMaxima $ y:z:zs
+
+------------------------------
+
+-- Exercise 3
