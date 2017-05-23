@@ -55,6 +55,8 @@ map' f = foldr (\a b -> (f a) : b) []
 cardProd :: [a] -> [b] -> [(a, b)]
 cardProd xs ys = [(x,y) | x <- xs, y <- ys]
 
+valid :: Integer -> (Integer,Integer) -> Bool
+valid n (i,j) = (i > 1) && (i < j) && (i + j + (2 * i * j) < n)
 
 -- implement sieve of sundaram
 sieveSundaram :: Integer -> [Integer]
