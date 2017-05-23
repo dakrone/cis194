@@ -14,6 +14,6 @@ eval (Mul a b) = eval a * eval b
 -- Ex02
 
 evalStr :: String -> Maybe Integer
-evalStr s = fmap eval $ parseExp Lit Add Mul s
+evalStr s = eval <$> parseExp Lit Add Mul s
 
 -- Ex03
